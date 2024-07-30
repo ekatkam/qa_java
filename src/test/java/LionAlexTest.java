@@ -1,3 +1,4 @@
+import com.example.Feline;
 import com.example.LionAlex;
 import org.junit.Assert;
 import org.junit.Test;
@@ -6,13 +7,12 @@ import org.junit.Test;
 import java.util.List;
 
 public class LionAlexTest {
+    private Feline feline;
 
-
-    LionAlex lionAlex = new LionAlex();
+    LionAlex lionAlex = new LionAlex(feline);
 
     public LionAlexTest() throws Exception {
     }
-
 
     @Test
     public void getFriendsTest() {
